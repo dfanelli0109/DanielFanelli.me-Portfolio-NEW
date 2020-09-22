@@ -8,6 +8,12 @@ html, body {
 
 }
 
+#linkedin {
+  width:auto;
+  height: 55px;
+  margin: 15px;
+}
+
 /*Header*/
 #topnav {
   width:100%;
