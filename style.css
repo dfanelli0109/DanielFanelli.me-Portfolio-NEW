@@ -82,7 +82,7 @@ height: auto;
   float:left;
   text-decoration: none;
   list-style-type: none;
-  width:17vw;
+  width:15vw;
 text-align: center;
 background-color: #101010;
 color: green;
@@ -93,11 +93,28 @@ font-size: 1.05em;
 }
 
 .navbar li:hover {
-  background-color: green;
+
   color: green;
 }
 
+#dropdown--menu {
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  background-color: #101010;
 
+  position: relative;
+}
+
+#dropdown--menu li {
+background-color:#101010;
+  margin: 0px;
+  padding: 0px;
+}
+
+#dropdown--menu li:hover {
+  background-color: white;
+}
 
 li a {
 
@@ -302,11 +319,10 @@ body {
   float:left;
 }
 
-@media (max-width: 969px){
-  navbar li {
-margin:0px;
-    width: 100%;
-  padding: 0px;
+@media (max-width: 989px){
+
+  body {
+    height: auto;
   }
 .pages {
   padding-top: 10vh;
@@ -316,9 +332,7 @@ margin:0px;
   padding-top:0px;
 }
 
-body {
-  height: auto;
-}
+
 
 .pages {
 height: 95vh;
@@ -331,7 +345,7 @@ height: 95vh;
 brand {
   font-size:2.25em;
   margin-top: 30vh;
-      height: 30vh;
+      height: 23vh;
 }
 
 
@@ -345,16 +359,17 @@ brand {
   height:65vh;
 }
 
+
   .navbar  {
       display: relative;
         position: fixed;}
 
+
 #bs-example-navbar-collapse-1 {
   margin: 0px;
   padding: 0px;
-  z-index: 1;
-
 }
+
     #bs-example-navbar-collapse-1 li {
       width:100vw;
       margin: 0px;
@@ -362,6 +377,9 @@ brand {
 
     }
 
+.nav li a {
+  font-size: 1em;
+}
     footer p {
       width: 100%;
     }
@@ -369,6 +387,12 @@ brand {
 
   }
 
+@media (max-width: 650px){
+
+  brand {
+    height: 25vh;
+  }
+}
 /*Table*/
 
 marquee {
