@@ -24,14 +24,19 @@
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/daniel-r-fanellijr', text: "Let's talk! Schedule a meeting today.", color: '#101010', textColor: '#ffffff', branding: true });</script>
 <!-- Calendly badge widget end -->
+
+
 <script>
+
 $("document").ready(function(){
-  $("body").fadeIn(1000);
-  $("brand").fadeIn(3000);
+
+
 
 
 });
 </script>
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+<script src="bower_components/aos/dist/aos.js"></script>
   </head>
   <body>
     <div id="home" id="techpic">
@@ -48,7 +53,7 @@ $("document").ready(function(){
  </div>
  <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" <div data-aos="slide-left" data-aos-default="10000" data-aos-duration="2000">
 <li class="active"><a class="navlink" href="#home">Home</a></li>
 <li class="active"><a class="navlink" href="#bio">About</a></li>
 <li class="dropdown"><a class="navlink dropdown-toggle"  class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
@@ -56,12 +61,13 @@ $("document").ready(function(){
 <!---<li><a href="#pricing">Pricing</a></li>
 <li><a href="#projects">Projects</a></li>-->
 <li><a class="navlink" href="#contact">Contact</a></li>
-<li><a class="navlink" href="tel:19167429702">Telephone</a></li>
-<li><a class="navlink" href="mailto:daniel@danielfanelli.me">Email</a></li>
+<li><a class="navlink" href="tel:19167429702">Call Me</a></li>
+<li><a class="navlink" href="mailto:daniel@danielfanelli.me">Email Me</a></li>
 
 </ul>
 </nav>
 <div class="main">
+
 <a href="index.html"><brand>Daniel Fanelli
 <h4 class="title text-center">Full Stack Web Developer</h4>
 <p>Available for: Full-Time  or Freelance Assignments. Contact me for more details.</p></brand></a>
@@ -69,11 +75,13 @@ $("document").ready(function(){
 </div>
 
 
-<div class="pages" id="bio">
+<div class="pages" id="bio" data-aos="fade-up" data-aos-default="10000" data-aos-duration="2000">>
     <h1 class="page-title text-center">ABOUT DANIEL</h1>
-  <div  class="col-4-6 container">
+  <div  class="col-4-6 container" >
+      <div data-aos="fade-up">
 
    <h2 class="text-center">BIO</h2>
+
    <p> From even my younger days, I have always had an eye for creativity.  My interests have evolved over the years from being behind a camera, editing, journalism, and problem solving into web development.
      In high school and at the University of Central Florida, I studied digital communications, advertising, business management/accounting and took my first programming class in Pascal.
      After graduating from college, I owned a special events and wedding videography company,
@@ -81,7 +89,7 @@ $("document").ready(function(){
 </p>
     <p>In 2017, I was introduced to an opportunity to learn web development and with a wife newly pregnant, I jumped at the opportunity.
       At Woz-U, I completed a program and earned  a Full Stack Software Engineer certificate.  I am ready to put my skills to work for you. If you are looking for a website or if your website isn't bringing in the traffic that you would like, please contact me for a free consultation.</p>
-
+</div>
         <strong class="font-weight-bold">If you are a technical recruiter and have a web development position you are looking for a great developer, please contact me today.
       </strong>
 
@@ -96,7 +104,7 @@ $("document").ready(function(){
 </div>
 
 
-<div  class="col-2-6 container">
+<div  class="col-2-6 container"<div data-aos="slide-left" data-aos-default="10000" data-aos-duration="2000">
 <h2 class="text-center">My Skills</h2>
 <h3 class="text-center">Front End</h3>
 <ul>
@@ -143,20 +151,24 @@ $("document").ready(function(){
 
           </div>
         </div>-->
-      <div class="pages" id="contact">
+      <div class="pages" id="contact" data-aos="fade-up" data-aos-default="10000" data-aos-duration="2000">
           <h1 class="page-title text-center">Contact</h1>
         <div id="contactinfo">
         <div class="container">
           <h2>Contact Daniel</h2>
          <a href="tel:19167429702">  <p>T: (916)742-9702</p></a>
            <a href="mailto:daniel@danielfanelli.me"><p>E: daniel@danielfanelli.me</p></a>
-  <h3>Follow me on LinkedIn:  <a class="text-center" href="https://www.linkedin.com/in/danielroyfanellijr/"><img id="linkedin" src="linkedin2.png"></a>  
+  <h3>Follow me on LinkedIn:  <a class="text-center" href="https://www.linkedin.com/in/danielroyfanellijr/"><img id="linkedin" src="linkedin2.png"></a>
 
         </div>
         </div>
       </div>
 <footer> <p class="text-white row d-flex justify-content-center mb-0">&copy; 2020 -Daniel Fanelli | A Proud Graduate of <a class="font-light" href="http://www.ucf.edu"> University of Central Florida </a> and <a class="font-light" href="http://www.woz-u.com"> Woz-U Web Development Bootcamp. </a></p>
 </footer>
-
+<script>
+$(function() {
+  AOS.init();
+});
+</script>
   </body>
 </html>
