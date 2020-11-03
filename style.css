@@ -57,12 +57,17 @@ brand p {
   position: fixed;
   top: 0px;
 }
-  .navbar .navbar-toggle {
-    border: 1px solid red;
-  }
-  .navbar .navbar-toggle .icon-bar {
-      background-color: white;
-  }
+.navbar .navbar-toggle {
+ border: 2px solid black;
+ border-radius: 4px;
+display: inline-block;
+  cursor: pointer;
+  padding: 0px 9px;
+
+
+}
+
+
 
   navbar {
     top: 0px;
@@ -261,7 +266,9 @@ footer {
   padding: 0px;
   background-color: black;
   height: auto;
-  width: 100%:
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
 
 }
 
@@ -339,6 +346,32 @@ body {
   body {
     height: auto;
   }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+  .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+
+  /* Fade out the second bar */
+  .change .bar2 {
+  opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
 .pages {
   padding-top: 10vh;
 }
@@ -388,12 +421,14 @@ brand {
 #bs-example-navbar-collapse-1 {
   margin: 0px;
   padding: 0px;
+  z-index: 1;
 }
 
     #bs-example-navbar-collapse-1 li {
-      width:100vw;
-      margin: 0px;
-      padding: 0px;
+      width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  height: 7vh;
 
     }
 

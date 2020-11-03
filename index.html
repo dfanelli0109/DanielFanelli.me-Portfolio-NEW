@@ -28,12 +28,10 @@
 
 <script>
 
-$("document").ready(function(){
-
-
-
-
-});
+function myFunction(x) {
+x.classList.toggle("change");
+}
+</script>
 </script>
 <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
 <script src="bower_components/aos/dist/aos.js"></script>
@@ -43,12 +41,12 @@ $("document").ready(function(){
         <nav class="navbar">
        <div class="container-fluid">
          <div class="navbar-header">
-   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-     <span class="sr-only">Toggle navigation</span>
-     <span class="icon-bar" id="icon1"></span>
-     <span class="icon-bar"></span>
-     <span class="icon-bar"></span>
-   </button>
+           <button type="button" class="navbar-toggle  container collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="myFunction(this)">
+               <div class="sr-only">Toggle navigation</div>
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+             </button>
 
  </div>
  <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,7 +64,7 @@ $("document").ready(function(){
 
 </ul>
 </nav>
-<div class="main">
+<div class="main" >
 
 <a href="index.html"><brand>Daniel Fanelli
 <h4 class="title text-center">Full Stack Web Developer</h4>
@@ -75,10 +73,10 @@ $("document").ready(function(){
 </div>
 
 
-<div class="pages" id="bio" data-aos="fade-up" data-aos-default="10000" data-aos-duration="2000">>
-    <h1 class="page-title text-center">ABOUT DANIEL</h1>
-  <div  class="col-4-6 container" >
-      <div data-aos="fade-up">
+<div class="pages" id="bio">
+    <h1 class="page-title text-center" data-aos="fade-up">ABOUT DANIEL</h1>
+  <div  class="col-4-6 container" data-aos="fade-up">
+
 
    <h2 class="text-center">BIO</h2>
 
@@ -89,7 +87,7 @@ $("document").ready(function(){
 </p>
     <p>In 2017, I was introduced to an opportunity to learn web development and with a wife newly pregnant, I jumped at the opportunity.
       At Woz-U, I completed a program and earned  a Full Stack Software Engineer certificate.  I am ready to put my skills to work for you. If you are looking for a website or if your website isn't bringing in the traffic that you would like, please contact me for a free consultation.</p>
-</div>
+
         <strong class="font-weight-bold">If you are a technical recruiter and have a web development position you are looking for a great developer, please contact me today.
       </strong>
 
@@ -104,7 +102,7 @@ $("document").ready(function(){
 </div>
 
 
-<div  class="col-2-6 container"<div data-aos="slide-left" data-aos-default="10000" data-aos-duration="2000">
+<div  class="col-2-6 container" data-aos="fade-up">
 <h2 class="text-center">My Skills</h2>
 <h3 class="text-center">Front End</h3>
 <ul>
@@ -124,7 +122,7 @@ $("document").ready(function(){
 </ul>
 
 
-</div>
+
    </div>
 
 
@@ -151,10 +149,11 @@ $("document").ready(function(){
 
           </div>
         </div>-->
-      <div class="pages" id="contact" data-aos="fade-up" data-aos-default="10000" data-aos-duration="2000">
-          <h1 class="page-title text-center">Contact</h1>
+      <div class="pages" id="contact"  >
+
+          <h1 class="page-title text-center" data-aos="fade-up" >Contact</h1>
         <div id="contactinfo">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <h2>Contact Daniel</h2>
          <a href="tel:19167429702">  <p>T: (916)742-9702</p></a>
            <a href="mailto:daniel@danielfanelli.me"><p>E: daniel@danielfanelli.me</p></a>
@@ -163,6 +162,7 @@ $("document").ready(function(){
         </div>
         </div>
       </div>
+    </div>
 <footer> <p class="text-white row d-flex justify-content-center mb-0">&copy; 2020 -Daniel Fanelli | A Proud Graduate of <a class="font-light" href="http://www.ucf.edu"> University of Central Florida </a> and <a class="font-light" href="http://www.woz-u.com"> Woz-U Web Development Bootcamp. </a></p>
 </footer>
 <script>
