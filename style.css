@@ -95,7 +95,7 @@ margin: 10px .5rem;
 padding: 0px;
 height: 100%;
 font-size: 1.05em;
-border: solid black 3px;
+
 }
 
 .navbar li:hover {
@@ -105,21 +105,29 @@ border: solid black 3px;
 
 #dropdown--menu {
   height: auto;
+  width: 170%;
   margin: 0px;
   padding: 0px;
-  background-color: #101010;
+  background-color: white;
 
   position: relative;
 }
 
 #dropdown--menu li {
-background-color:#101010;
+background-color: white;
   margin: 0px;
   padding: 0px;
+  width: 100%;
+
 }
 
 #dropdown--menu li:hover {
   background-color: white;
+}
+
+#dropdown--menu li a {
+  text-align:center;
+  width: 100%;
 }
 
 li a {
