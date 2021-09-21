@@ -37,7 +37,7 @@ brand {
   color:black;
   text-align: center;
   border-top: 4px solid white;
- background-color: rgba(255,255,255,1);
+ background-color: rgba(255,255,255,.8);
   border-bottom: 4px solid white;}
 
 
@@ -364,6 +364,7 @@ body {
    border: 2px solid black;
    border-radius: 4px;
   display: inline-block;
+  width: auto;s
     cursor: pointer;
     padding: 0px 9px;
 
@@ -451,7 +452,7 @@ brand {
       width: 100vw;
   margin: 0px;
   padding: 0px;
-  height: 7vh;
+
 
     }
 
